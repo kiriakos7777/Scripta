@@ -1,41 +1,37 @@
-# Compiled Lua sources
-luac.out
+--Made By Kiriakos7777#0200 Join Server For A Lot Of Scripts https://discord.gg/6ukGYmv8Wz
+--NEVER CHANGE THE CODE IT MAY CRASH THE SCRIPT
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Blox Fruits Scripts", "Ocean")
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+MainSection:NewButton("HoHo Hub", "Executes HoHo Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+MainSection:NewButton("ATR Hub", "Executes ATR Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
+end)
+--Player
+local Player = Window:NewTab("Misc")
+local PlayerSection = Player:NewSection("Player")
 
-# Precompiled Headers
-*.gch
-*.pch
+PlayerSection:NewSlider("Walkspeed", "Speed", 500, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+PlayerSection:NewSlider("Jumppower", "JumpPower", 350, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+--Credits
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+CreditsSection:NewLabel("This made by Kiriakos7777#0200")
+CreditsSection:NewLabel("Script Update Always")
+--Nothing Here
+local N = Window:NewTab("?????")
+local NSection = N:NewSection("?????")
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+NSection:NewLabel("Nothing here LOL")
