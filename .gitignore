@@ -1,7 +1,12 @@
---Made By Kiriakos7777#0200 Join Server For A Lot Of Scripts https://discord.gg/6ukGYmv8Wz
---NEVER CHANGE THE CODE IT MAY CRASH THE SCRIPT
+--Don't touch the code
+--Made by Kiriakos7777#0200
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Blox Fruits Scripts", "Ocean")
+    --Updates
+    local Updates = Window:NewTab("Updates")
+    local UpdatesSection = Tab:NewSection("Updates")
+
+    UpdatesSection:NewLabel("Removed ????? Tab")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
@@ -28,10 +33,6 @@ end)
 local Credits = Window:NewTab("Credits")
 local CreditsSection = Credits:NewSection("Credits")
 
-CreditsSection:NewLabel("This made by Kiriakos7777#0200")
+CreditsSection:NewLabel("This made by kiriakos7777#0200")
 CreditsSection:NewLabel("Script Update Always")
---Nothing Here
-local N = Window:NewTab("?????")
-local NSection = N:NewSection("?????")
 
-NSection:NewLabel("Nothing here LOL")
